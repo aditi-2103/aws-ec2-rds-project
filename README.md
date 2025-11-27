@@ -45,7 +45,8 @@ Technologies Used:
 
 Setup Instructions:
 
-1️⃣ Create an RDS Database
+1️⃣ Create an RDS Database:
+
 Go to AWS Console → RDS → Create Database
 Choose:
 Engine: MySQL or PostgreSQL
@@ -68,7 +69,8 @@ Wait for database to finish creating.
 
 
 
-2️⃣ Create an EC2 Instance
+2️⃣ Create an EC2 Instance:
+
 Go to EC2 → Launch Instance
 Choose:
 AMI: Ubuntu 22.04
@@ -85,13 +87,14 @@ Launch the instance.
 
 
 
-3️⃣ SSH Into the EC2 Instance
+3️⃣ SSH Into the EC2 Instance:
+
 ssh -i "your-key.pem" ubuntu@<EC2-Public-IP>
 
 <img width="1366" height="662" alt="ec2(1)" src="https://github.com/user-attachments/assets/8692190e-a311-43b5-af03-c5e106072ccc" />
 
 
-4️⃣ Install MySQL/PostgreSQL Client on EC2
+4️⃣ Install MySQL/PostgreSQL Client on EC2:
 
 For MySQL:
 sudo apt update
