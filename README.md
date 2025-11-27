@@ -98,28 +98,43 @@ ssh -i "your-key.pem" ubuntu@<EC2-Public-IP>
 
 For MySQL:
 sudo apt update
+
 sudo apt install mysql-client -y
 
 5️⃣ Connect to RDS from EC2:
+
 mysql -h <RDS-ENDPOINT> -u <username> -p
 
 6️⃣ Run SQL Queries:
 CREATE DATABASE aws;
+
 USE aws;
+
 CREATE TABLE learners(learner_id INT PRIMARY KEY, learner_name VARCHAR(50));
+
 INSERT INTO learners VALUES(1, "Aditi");
+
 SELECT * FROM users;
+
 <img width="1366" height="662" alt="VirtualBox_Ubuntu _25_11_2025_20_37_59_ss" src="https://github.com/user-attachments/assets/20e6348c-41f0-4beb-9f27-dc7da96c7ea9" />
 
 
 Security Notes:
+
 *Never leave RDS public in production.
+
 *Use VPC + private subnets.
+
 *Configure least-privilege access.
 
 Conclusion:
+
 This project gives hands-on experience in:
+
 *Cloud deployment
+
 *Server–database connectivity
+
 *Networking & security
+
 *Basic Linux server management
